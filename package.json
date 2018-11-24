@@ -94,5 +94,10 @@
 	},
 	"dependencies": {
 		"fanfou-sdk": "^3.1.0"
-	}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/LitoMore/code-fan.git"
+	},
+	"publisher": "LitoMore"
 }
