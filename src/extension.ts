@@ -9,6 +9,10 @@ export function activate(context: vscode.ExtensionContext): void {
 			placeHolder: 'How\'s everything going?'
 		});
 
+		if (!status) {
+			return;
+		}
+
 		const {consumerKey, consumerSecret, username, password, protocol, fakeHttps} = vscode.workspace.getConfiguration('fanfou');
 		const opt: Fanfou.FanfouOptions = {consumerKey, consumerSecret, username, password, protocol, fakeHttps};
 
