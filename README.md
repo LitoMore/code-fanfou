@@ -17,9 +17,7 @@ Setup Fanfou account to `settings.json`:
 }
 ```
 
-Use <kbd>F1</kbd> or <kbd>shift</kbd> + <kbd>command</kbd> to call out the command input, then input `fanfou` to trigger Fanfou posting input.
-
-Enjoy it!
+Use <kbd>F1</kbd> or <kbd>shift</kbd> + <kbd>command</kbd> + <kbd>p</kbd> to call out the command input, then input `fanfou` to trigger Fanfou posting input.
 
 ## More Options
 
@@ -39,6 +37,10 @@ Also you could add your Fanfou app consumer to overwrite.
 ```
 
 For the options documentation, please refer the [fanfou-sdk](https://github.com/LitoMore/fanfou-sdk-node).
+
+## Related
+
+- [fanfou-sdk](https://github.com/LitoMore/fanfou-sdk-node) - Fanfou SDK for Node.js
 
 ## License
 
