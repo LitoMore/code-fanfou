@@ -10,7 +10,7 @@ Simply search for the `code-fanfou` extension from the list and install it.
 
 Setup Fanfou account to `settings.json`:
 
-```json
+```javascript
 {
   "fanfou.username": "foo",
   "fanfou.password": "bar"
@@ -20,6 +20,25 @@ Setup Fanfou account to `settings.json`:
 Use <kbd>F1</kbd> or <kbd>shift</kbd> + <kbd>command</kbd> to call out the command input, then input `fanfou` to trigger Fanfou posting input.
 
 Enjoy it!
+
+## More Options
+
+By default, `code-fanfou` already have the consumer key and secret, you don't need to configure it.
+
+Also you could add your Fanfou app consumer to overwrite.
+
+```javascript
+{
+  "fanfou.consumerKey": "",
+  "fanfou.consumerSecret": "",
+  "fanfou.username": "",
+  "fanfou.password": "",
+  "fanfou.protocol": "https:",
+  "fanfou.fakeHttps": true
+}
+```
+
+For the options documentation, please refer the [fanfou-sdk](https://github.com/LitoMore/fanfou-sdk-node).
 
 ## License
 
