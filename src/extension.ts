@@ -6,7 +6,8 @@ import * as Fanfou from 'fanfou-sdk';
 export function activate(context: vscode.ExtensionContext): void {
 	const disposable = vscode.commands.registerCommand('extension.postFanfou', async () => {
 		const status = await vscode.window.showInputBox({
-			placeHolder: 'How\'s everything going?'
+			placeHolder: 'How\'s everything going?',
+			prompt: 'Press `Enter` to send'
 		});
 
 		if (!status) {
