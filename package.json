@@ -1,0 +1,97 @@
+{
+	"name": "code-fanfou",
+	"displayName": "Fanfou",
+	"description": "Fanfou in VS Code",
+	"version": "0.1.0",
+	"engines": {
+		"vscode": "^1.29.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.postFanfou"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.postFanfou",
+				"title": "fanfou"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Fanfou configuration",
+			"properties": {
+				"fanfou.consumerKey": {
+					"type": "string",
+					"default": "175d9183cc2a7298abed2ca2280daa2a",
+					"description": "Fanfou consumer key"
+				},
+				"fanfou.consumerSecret": {
+					"type": "string",
+					"default": "7c541eab37d4a8be432119c3fcf5c3a0",
+					"description": "Fanfou consumer secret"
+				},
+				"fanfou.username": {
+					"type": "string",
+					"default": "",
+					"description": "Fanfou username"
+				},
+				"fanfou.password": {
+					"type": "string",
+					"default": "",
+					"description": "Fanfou password"
+				},
+				"fanfou.protocol": {
+					"type": "string",
+					"default": "https:",
+					"description": "Fanfou protocol"
+				},
+				"fanfou.fakeHttps": {
+					"type": "boolean",
+					"default": true,
+					"description": "Fanfou basestring hook"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "xo"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^8.10.25",
+		"eslint-config-xo": "^0.25.0",
+		"eslint-config-xo-typescript": "^0.3.0",
+		"eslint-plugin-typescript": "^0.13.0",
+		"typescript": "^2.6.1",
+		"typescript-eslint-parser": "^21.0.1",
+		"vscode": "^1.1.21",
+		"xo": "^0.23.0"
+	},
+	"xo": {
+		"extends": "xo-typescript",
+		"extensions": [
+			"ts"
+		],
+		"rules": {
+			"import/no-unresolved": [
+				2,
+				{
+					"ignore": [
+						"^vscode$"
+					]
+				}
+			]
+		}
+	},
+	"dependencies": {
+		"fanfou-sdk": "^3.1.0"
+	}
+}
