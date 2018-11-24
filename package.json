@@ -12,6 +12,7 @@
 	"activationEvents": [
 		"onCommand:extension.postFanfou"
 	],
+	"icon": "icon.png",
 	"main": "./out/extension",
 	"contributes": {
 		"commands": [
