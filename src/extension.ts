@@ -7,7 +7,7 @@ export function activate(context: vscode.ExtensionContext): void {
 	const disposable = vscode.commands.registerCommand('extension.postFanfou', async () => {
 		const status = await vscode.window.showInputBox({
 			placeHolder: 'How\'s everything going?',
-			prompt: 'Press `Enter` to send'
+			prompt: 'Send'
 		});
 
 		if (!status) {
@@ -24,7 +24,7 @@ export function activate(context: vscode.ExtensionContext): void {
 		if (res.error) {
 			vscode.window.showInformationMessage(res.error);
 		} else {
-			vscode.window.showInformationMessage('Status sent.');
+			vscode.window.showInformationMessage('Status sent');
 		}
 	});
 
