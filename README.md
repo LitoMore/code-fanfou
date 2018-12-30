@@ -1,5 +1,7 @@
 # code-fanfou
 
+A VS Code extension for Fanfou
+
 ## Install
 
 In VS Code, press <kbd>F1</kbd> and narrow down the list of commands by typing extension. Pick Extensions: Install Extension.
