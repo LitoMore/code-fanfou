@@ -33,8 +33,7 @@ Also you could add your Fanfou app consumer to overwrite.
   "fanfou.consumerSecret": "",
   "fanfou.username": "",
   "fanfou.password": "",
-  "fanfou.protocol": "https:",
-  "fanfou.fakeHttps": true
+  "fanfou.protocol": "https:"
 }
 ```
 

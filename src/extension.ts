@@ -14,8 +14,17 @@ export function activate(context: vscode.ExtensionContext): void {
 			return;
 		}
 
-		const {consumerKey, consumerSecret, username, password, protocol, fakeHttps} = vscode.workspace.getConfiguration('fanfou');
-		const opt: Fanfou.FanfouOptions = {consumerKey, consumerSecret, username, password, protocol, fakeHttps};
+		const {consumerKey, consumerSecret, username, password, protocol} = vscode.workspace.getConfiguration('fanfou');
+		const opt: Fanfou.FanfouOptions = {
+			consumerKey,
+			consumerSecret,
+			username,
+			password,
+			protocol,
+			hooks: {
+				baseString: str => protocol === 'https:' ? str.replace('https', 'http') : str
+			}
+		};
 
 		const ff = new Fanfou(opt);
 		await ff.xauth();

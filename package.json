@@ -49,11 +49,6 @@
 					"type": "string",
 					"default": "https:",
 					"description": "Fanfou protocol"
-				},
-				"fanfou.fakeHttps": {
-					"type": "boolean",
-					"default": true,
-					"description": "Fanfou basestring hook"
 				}
 			}
 		}
@@ -93,7 +88,7 @@
 		}
 	},
 	"dependencies": {
-		"fanfou-sdk": "^3.1.0"
+		"fanfou-sdk": "^4.0.3"
 	},
 	"repository": {
 		"type": "git",
