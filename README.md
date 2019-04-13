@@ -25,7 +25,7 @@ Setup Fanfou account to `settings.json`:
 }
 ```
 
-Use <kbd>F1</kbd> or <kbd>shift</kbd> + <kbd>command</kbd> + <kbd>p</kbd> to call out the command input, then input `fanfou` to trigger Fanfou posting input.
+Use <kbd>F1</kbd> or <kbd>Shift + Command + P</kbd> to call out the command input, then input `fanfou` to trigger Fanfou posting input.
 
 ## More Options
 
