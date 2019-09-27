@@ -40,5 +40,6 @@ export function activate(context: vscode.ExtensionContext): void {
 	context.subscriptions.push(disposable);
 }
 
+/* eslint-disable-next-line @typescript-eslint/no-empty-function */
 export function deactivate(): void {
 }
