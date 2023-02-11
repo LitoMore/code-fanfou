@@ -70,7 +70,7 @@
 		"eslint-plugin-typescript": "^0.14.0",
 		"typescript": "^3.6.3",
 		"vscode": "^1.1.36",
-		"xo": "^0.25.3"
+		"xo": "^0.53.1"
 	},
 	"xo": {
 		"extends": "xo-typescript",
@@ -89,7 +89,7 @@
 		}
 	},
 	"dependencies": {
-		"fanfou-sdk": "^4.0.3"
+		"fanfou-sdk": "^5.0.0"
 	},
 	"repository": {
 		"type": "git",
